@@ -8,12 +8,12 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class SupportTomTITBot extends TelegramLongPollingBot {
     @Override
     public String getBotUsername() {
-        return "Echo Bot";
+        return "Support TomTIT";
     }
 
     @Override
     public String getBotToken() {
-        return "5683372107:AAFTz3vmKmeUXp9yjghv0Lcb2gllcuozAWo";
+        return System.getenv("SUPPORTTOMTITBOTTOKEN");
     }
 
     @Override
