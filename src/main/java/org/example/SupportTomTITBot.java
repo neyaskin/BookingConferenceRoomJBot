@@ -42,11 +42,7 @@ public class SupportTomTITBot extends TelegramLongPollingBot {
                 String eventDuration = eventDurationNoFormat.substring(eventDurationNoFormat.indexOf(':') + 1).trim();
                 String eventDescription = eventDescriptionNoFormat.substring(eventDescriptionNoFormat.indexOf(':') + 1).trim();
                 
-//                message.setText(eventName + "" + eventTime + "" + eventDuration + "" + eventDescription);
                 message.setText(eventName + "\n" + eventTime + "\n" + eventDuration + "\n" + eventDescription);
-
-
-//                Event createNewEvent = new Event(eventName, eventTime, eventDuration, eventDescription);
             } else {
                 message.setText("Неверный формат");
             }
